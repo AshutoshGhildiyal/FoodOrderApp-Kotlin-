@@ -28,7 +28,7 @@ class PlaceYourOrderActivity : AppCompatActivity() {
         actionBar?.setDisplayHomeAsUpEnabled(true) // for enabling back button
 
         buttonPlaceYourOrder.setOnClickListener{
-
+            onPlaceOrderButtonclick(resturantModel)
         }
         switchDelivery?.setOnCheckedChangeListener{buttonView, isChecked ->
             if(isChecked){
